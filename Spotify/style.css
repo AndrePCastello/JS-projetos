@@ -147,3 +147,60 @@ html, body{height: 100%;}
 	font-size: 13px;
 	text-align: left;
 }
+
+.player{
+	width: 100%;
+	padding: 20px;
+	height: 130px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	background: rgb(60, 60, 60);
+}
+
+.play__artist{
+	width: 20%;
+}
+
+.play__artist img{
+	max-width: 70px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.play__artist h3{
+	display: inline-block;
+	color: white;
+	font-weight: normal;
+	font-size: 20px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.play__artist h3 > span{
+	color: rgb(200, 200, 200);
+	font-size: 13px;
+}
+
+.player__control{
+	width: 70%;
+	text-align: center;
+}
+
+.player__controll__buttons a{
+	color: white;
+	margin: 8px 15px;
+	font-size: 18px;
+}
+
+.player__controll__progress{
+	width: 100%;
+	max-width: 600px;
+	height: 7px;
+	margin-top: 20px;
+	position: relative;
+	border-radius: 8px;
+	display: inline-block;
+	background: rgb(130, 130, 130);
+}
