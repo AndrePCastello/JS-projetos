@@ -1,0 +1,11 @@
+@media screen and (min-width: 679px) and (max-width:2300px){
+    .navebar__menu__img img{
+       content: url(imgs/squeezeDesktopHero.png);
+       height: 650px;
+    }
+
+    .main h2{font-size: 60px;}
+
+    .main__item__subtitle{width: 100%;}
+    .main__item__subtitle h3{font-size: 30px;}
+}
