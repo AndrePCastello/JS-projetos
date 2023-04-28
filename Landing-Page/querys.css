@@ -8,4 +8,78 @@
 
     .main__item__subtitle{width: 100%;}
     .main__item__subtitle h3{font-size: 30px;}
+
+    .itens__button{
+        margin: 0px;
+        width: 270px;
+        padding: 17px;
+        border-radius: 50px;
+    }
+
+    .main__itens__imgs{
+        margin-left: 100px;
+    }
+
+    .main__itens__imgs img{
+        width: 90px;
+        margin-left: 50px;
+    }
+
+    .main__itens__imgs p{
+        margin-left: 52px;
+        font-size: 20px;
+
+    }
+
+    .main{height: 890px;}
+
+    .main__item__subtitle h3{
+        margin-left: 50px;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    .itens__imgs{
+        margin-bottom: 60px;
+    }
+
+    #medica{
+        width: 302px;
+        height: 439px;
+        position: relative;
+        bottom: 77px;
+        margin-left: 70px;
+    }
+
+    .section__images__item1 img{
+        width: 300px;
+        height: 370px;
+
+    }
+
+    .section__images__item2 img{
+        width: 300px;
+        height: 370px;
+    }
+    .section h3{
+        font-size: 30px;
+        width: 500px;
+        display: none;
+    }
+
+    .section{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+
+    .rx h3{
+        display: none;
+    }
+
+    .rx{
+        margin-left: 30px;
+    }
 }
