@@ -45,10 +45,11 @@
 
     #medica{
         width: 302px;
-        height: 439px;
+        height: 451px;
         position: relative;
-        bottom: 77px;
+        bottom: -10px;
         margin-left: 70px;
+        margin-top: 32px;
     }
 
     .section__images__item1 img{
@@ -65,21 +66,97 @@
         font-size: 30px;
         width: 500px;
         display: none;
+    
     }
 
     .section{
         display: flex;
         align-items: center;
         margin-top: 30px;
-        width: 100%;
+        width: 600px;
     }
 
+    .section__name p{display: none;}
+
+    .section__images{
+        border: none;
+    }
 
     .rx h3{
-        display: none;
+        display: block;
+        position: relative;
+        right: 360px;
     }
 
     .rx{
         margin-left: 30px;
+        margin-top: 25px;
     }
+
+    #text{
+        position: relative;
+        right: 360px;
+    }
+
+    #responsive{
+        width: 500px;
+        margin-left: 0px;
+        margin: auto;
+        display: flex;
+    }
+    
+    .section2__container2__itens1, .section2__container2__itens2{
+        margin: 0px;
+        height: 210px;
+    }
+
+    .section2__container2__itens2{height: 250px;}
+
+    .section2__container2{
+        position: relative;
+        top: 31px;
+    }
+
+    .section2__main h3, .section2__main p{
+        position: relative;
+        top: 113px;
+        padding-left: 30px;
+    }
+
+    .itens__button__end{
+        width: 200px;
+        border-radius: 50px;
+        position: relative;
+        right: 510px;
+        bottom: 60px;
+    }
+
+    .curology{
+        display: block;
+        font-size: 40px;
+        margin-left: 50px;
+        position: relative;
+        top: 180px;
+        color: #1d1d44;
+    }
+
+}
+
+/*.section2__container2{
+    position: relative;
+    top: 31px;
+}
+
+.section2__main h3, p{
+    position: relative;
+    top: 113px;
+    padding-left: 30px;
+}
+
+.itens__button__end{
+    width: 200px;
+    border-radius: 50px;
+    position: relative;
+    right: 510px;
+    bottom: 60px;
 }

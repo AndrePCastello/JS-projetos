@@ -266,3 +266,11 @@ body{
 .itens__button__end:hover{
 	background-color: #4a4a69;
 }
+
+#responsive__text{
+	display: none;
+}
+
+.curology{
+	display: none;
+}
