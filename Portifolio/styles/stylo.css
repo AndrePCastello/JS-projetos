@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Libre+Franklin:wght@200;300&family=Titillium+Web:wght@300;400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: roboto, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 nav{
@@ -13,11 +13,12 @@ nav{
     justify-content: space-around;
     margin-top: 25px;
     font-size: 17px;
+    
 }
 
 .nav__container1{
     display: flex;
-    margin-right: 30px;
+    margin-left: 50px;
     justify-content: flex-start;
     width: 500px;
 }
@@ -32,6 +33,7 @@ nav{
     display: flex;
     width: 548px;
     justify-content: flex-end;
+    margin-right: 78px;
 }
 
 .nav__container2 a{
@@ -44,11 +46,36 @@ nav{
     text-decoration: underline;
 }
 
+.nav__container2 img{display: none;}
+
+.nav__container3{
+    display: none;
+    margin-top: 30px;
+    margin-right: 80px;
+    background-color: black;
+    padding: 10px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.nav__container3 a{
+    display: block;
+    text-align: end;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.nav__container3 a:hover{
+    text-decoration: underline;
+}
+
 main{
     display: flex;
     width: 80%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 79px;
     margin-left: 70px;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -56,6 +83,8 @@ main{
 
 main h2{
     margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.733);
+    font-weight: 200;
 }
 
 main section{
@@ -91,15 +120,12 @@ main section h1{
     border: 1px solid black;
     text-decoration: none;
     color: black;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.199);
 }
 
 #button a:hover{
     background-color: black;
     color: white;
-}
-
-.main__container2{
-    margin: 0px;
 }
 
 .main__container1__images{
@@ -109,4 +135,66 @@ main section h1{
 
 .main__container1__images img{
     margin-left: 15px;
+}
+
+.main__container2{
+    width: 250px;
+    padding-right: 80px;
+}
+
+.tech{
+    display: block;
+    margin-top: 159px;
+}
+
+.main__title{
+    margin-top: 120px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.main__imgs{
+    margin: auto;
+    margin-top: 100px;
+    width: 500px;
+}
+
+.main__infos{
+    margin-left: 80px;
+    margin-top: 170px;
+    color: rgba(0, 0, 0, 0.89);
+    font-size: 2.8vh;
+    
+}
+
+.main__infos h2, .main__infos h3{
+    font-size: 4.0vh;
+}
+
+.main__infos > h3, .main__infos > p{
+    margin-top: 50px;
+}
+
+.main__infos p{
+    width: 400px;
+    line-height: 30px;
+}
+
+#container__hidden{
+    display: none;
+    width: 500px;
+    padding: 10px;
+}
+
+#container__hidden p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100px;
+    padding: 5px;
+    background-color: white;
 }
