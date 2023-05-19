@@ -8,13 +8,18 @@ function newitem(){
     if (c <= 4){
     c = c + 1
     const divtag = document.createElement('div');
+    const divtagcheckbox = document.createElement('div')
+    const checkbox = document.createElement('input');
     const botaoRemover = document.createElement('button');
+    checkbox.type = 'checkbox'
     botaoRemover.textContent = 'Remover';
     botaoRemover.addEventListener('click', function() {
         removeDiv(divtag);
       });
     const Title = document.createElement('h2');
     const Paragrafo = document.createElement('p');
+    const Paragrafocheck = document.createElement('p');
+    Paragrafocheck.textContent = 'concluido'
         if (c === 1){
             let n1 = ''
             let n1p = ''
@@ -85,13 +90,16 @@ function newitem(){
     
     botaoRemover.id = 'botao' + c
     divtag.className = 'paragrafos'
+    divtagcheckbox.className = 'divcheckbox'
     divtag.id = 'Div' + c
     divtag.appendChild(Title)
     divtag.appendChild(Paragrafo)
+    divtag.appendChild(divtagcheckbox)
     const divmain = document.getElementById('container')
     divmain.appendChild(divtag)
     divtag.append(botaoRemover)
-    
+    divtagcheckbox.appendChild(checkbox)
+    divtagcheckbox.appendChild(Paragrafocheck)
     alert(`item número ${c} criado`)
     divtagm = divtag
     paragrafom = paragrafo
