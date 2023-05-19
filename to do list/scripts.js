@@ -1,3 +1,4 @@
+var removemsg = document.getElementById('criartarefa')
 divtagm = null
 paragrafom = null
 divmainm = null
@@ -6,9 +7,14 @@ c = 0
 function newitem(){
     if (c <= 4){
     c = c + 1
+    const divtag = document.createElement('div');
+    const botaoRemover = document.createElement('button');
+    botaoRemover.textContent = 'Remover';
+    botaoRemover.addEventListener('click', function() {
+        removeDiv(divtag);
+      });
     const Title = document.createElement('h2');
     const Paragrafo = document.createElement('p');
-    const divtag = document.createElement('div');
         if (c === 1){
             let n1 = ''
             let n1p = ''
@@ -76,11 +82,6 @@ function newitem(){
             }
             }
         }
-    const botaoRemover = document.createElement('button');
-    botaoRemover.textContent = 'Remover';
-    botaoRemover.addEventListener('click', function() {
-        removeDiv(divtag);
-      });
     
     botaoRemover.id = 'botao' + c
     divtag.className = 'paragrafos'
@@ -90,10 +91,8 @@ function newitem(){
     const divmain = document.getElementById('container')
     divmain.appendChild(divtag)
     divtag.append(botaoRemover)
-
-    alert(divtag.id)
-    alert(botaoRemover.id)
-
+    
+    alert(`item número ${c} criado`)
     divtagm = divtag
     paragrafom = paragrafo
     divmainm = divmain
@@ -106,4 +105,5 @@ function removeDiv(div) {
     const divPai = div.parentNode;
     divPai.removeChild(div);
     c = c - 1
+    alert(`item número ${c + 1} excluído`)
 }
