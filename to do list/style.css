@@ -2,6 +2,7 @@ html{
     height: 100vh;
 }
 body{
+    margin: 0px;
     background-image: url(4815143_45908.jpg);
     background-position: center;
     background-size: cover;
@@ -17,12 +18,15 @@ main{
     max-width: 800px;
     min-width: 350px;
     height: auto;
+    max-height: 500px;
     margin: auto;
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
     background-color: rgb(45, 189, 224);
+    overflow-y: auto;
 }
+
 .paragrafos{
     background-color: white;
     padding: 15px;
