@@ -1,7 +1,7 @@
 var removemsg = document.getElementById('criartarefa')
-divtagm = null
-paragrafom = null
-divmainm = null
+divtagm = ''
+paragrafom = ''
+divmainm = ''
 c = 0
 
 function newitem(){
@@ -12,6 +12,9 @@ function newitem(){
     const checkbox = document.createElement('input');
     const botaoRemover = document.createElement('button');
     checkbox.type = 'checkbox'
+    checkbox.addEventListener('click', function(){
+        done(divtag)
+    });
     botaoRemover.textContent = 'Remover';
     botaoRemover.addEventListener('click', function() {
         removeDiv(divtag);
@@ -101,9 +104,6 @@ function newitem(){
     divtagcheckbox.appendChild(checkbox)
     divtagcheckbox.appendChild(Paragrafocheck)
     alert(`item número ${c} criado`)
-    divtagm = divtag
-    paragrafom = paragrafo
-    divmainm = divmain
     }else{
         alert('Quantidade de listas criadas atingidas')
     }
@@ -114,4 +114,13 @@ function removeDiv(div) {
     divPai.removeChild(div);
     c = c - 1
     alert(`item número ${c + 1} excluído`)
+}
+
+function done(div){
+    let checkbox = div.querySelector('input[type="checkbox"]')
+    if (checkbox.checked) {
+        div.style.textDecoration = 'line-through';
+      } else {
+        div.style.textDecoration = 'none'
+      }
 }
