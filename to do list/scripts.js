@@ -1,7 +1,5 @@
 var removemsg = document.getElementById('criartarefa')
-divtagm = ''
-paragrafom = ''
-divmainm = ''
+
 c = 0
 
 function newitem(){
@@ -12,12 +10,13 @@ function newitem(){
     const checkbox = document.createElement('input');
     const botaoRemover = document.createElement('button');
     checkbox.type = 'checkbox'
+    checkbox.id = 'checkbox' + c;
     checkbox.addEventListener('click', function(){
         done(divtag)
     });
     botaoRemover.textContent = 'Remover';
     botaoRemover.addEventListener('click', function() {
-        removeDiv(divtag);
+        removeDiv(divtag.parentNode);
       });
     const Title = document.createElement('h2');
     const Paragrafo = document.createElement('p');
@@ -103,10 +102,11 @@ function newitem(){
     divtag.append(botaoRemover)
     divtagcheckbox.appendChild(checkbox)
     divtagcheckbox.appendChild(Paragrafocheck)
-    alert(`item número ${c} criado`)
+    divmain.appendChild(divtag);
     }else{
         alert('Quantidade de listas criadas atingidas')
     }
+
 }
 
 function removeDiv(div) {
@@ -117,10 +117,17 @@ function removeDiv(div) {
 }
 
 function done(div){
-    let checkbox = div.querySelector('input[type="checkbox"]')
+    const checkbox = document.getElementById('checkbox' + c);
+    let h2 = div.querySelector('h2')
+    let p = div.querySelector('p')
     if (checkbox.checked) {
-        div.style.textDecoration = 'line-through';
+        h2.style.textDecoration = 'line-through';
+        p.style.textDecoration = 'line-through'
       } else {
-        div.style.textDecoration = 'none'
+        h2.style.textDecoration = 'none'
+        p.style.textDecoration = 'none'
       }
 }
+
+
+  

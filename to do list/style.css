@@ -1,6 +1,7 @@
 html{
     height: 100vh;
 }
+
 body{
     margin: 0px;
     background-image: url(4815143_45908.jpg);
@@ -9,6 +10,7 @@ body{
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
 }
+
 header{
     text-align: center;
     color: white;
@@ -36,15 +38,13 @@ main{
     border-radius: 1px solid black;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.158);
 }
-.paragrafos{
-    text-decoration: none;
-}
 
 .paragrafos:hover{
     transform: translateY(-2px);
     transition-duration: 0.3;
     border: 2px solid blue;
 }
+
 .paragrafos > p, 
 .paragrafos > h2{
     display: block;
@@ -93,6 +93,11 @@ main{
     font-size: 20px;
 }
 
+#creat__button h3,
+header h1{
+    color: white;
+    font-weight: 300;
+}
 
 
 
